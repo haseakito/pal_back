@@ -1,0 +1,8 @@
+version: '3.8'
+
+# TODO: Add postgres
+services:
+  app:
+    build: .
+    ports:
+      - 8000:8000
