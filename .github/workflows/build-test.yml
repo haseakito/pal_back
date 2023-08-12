@@ -40,7 +40,8 @@ jobs:
             - name: Install dependencies
               if: ${{ steps.pip_cache_id.outputs.cache-hit != true }}
               run: |
-                pip install requirements.txt
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt  
 
             # Send success notification to Discord 
             - name: Discord Notification on Success
