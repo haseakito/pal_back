@@ -7,3 +7,7 @@ __pycache__
 env/
 venv/
 Env
+
+
+# Firebase secret
+serviceAccountKey.json
